@@ -1,0 +1,240 @@
+.testimonial {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    margin: 100px 0px;
+}
+
+.reviewer {
+    margin-left: 60px;
+    align-items: center;
+    grid-row: span 2;
+    max-width: 500px;
+}
+
+.reviewer img {
+    margin-top: 80px;
+    margin-bottom: -40px;
+    margin-left: -10px;
+}
+
+.reviewer h1 {
+    font-size: 50px;
+
+}
+
+.reviewer p {
+    line-height: 30px;
+    font-size: 22px;
+    margin-top: -20px;
+}
+
+.reviewer ul {
+    margin-left: -40px;
+    color: #757575dc;
+    font-size: 18px;
+}
+
+.checklist {
+    background-image: url(/images/Done_ring_round_fill.svg);
+    background-repeat: no-repeat;
+    background-position: -2px 5px;
+    line-height: 2;
+    background-size: 1.5em;
+    list-style: none;
+    text-indent: 2em;
+}
+
+.card1-container {
+    width: 250px;
+    margin: 100px 0px 20px 300px;
+    /* margin-right: 300px; */
+    display: grid;
+    align-items: center;
+    padding: 20px 60px 10px 40px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 6px 50px 0px rgb(0, 0, 0, 0.09);
+
+}
+
+.card {
+    display: flex;
+}
+
+.logo {
+    width: 100px;
+    margin-right: 10px;
+}
+
+.card-text {
+    margin-top: -10px;
+    line-height: 30px;
+    text-align: left;
+    font-size: 18px;
+    color: #757575;
+
+
+}
+
+.card2-container {
+    width: 250px;
+    margin: 20px 0px 30px 100px;
+    /* margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: -50px; */
+    display: grid;
+    align-items: center;
+    padding: 20px 60px 10px 40px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 6px 50px 0px rgb(0, 0, 0, 0.09);
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 639px) {
+
+    .testimonial {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .reviewer{
+        margin-top: -50px;
+        margin-left: 10px;
+        max-width: 380px;
+    }  
+    .reviewer img {
+        margin-top: 80px;
+        margin-bottom: -20px;
+        
+    }
+    .reviewer h1 {
+        font-size: 30px;
+    
+    }
+    
+    .reviewer p {
+        line-height: 30px;
+        font-size: 18px;
+    }
+    
+    .reviewer ul {
+        font-size: 11px;
+    }
+
+    .card1-container {
+        width: 160px;
+        margin-top: 40px;
+        margin-left: 70px;
+        padding: 20px 70px 10px 20px;
+
+    }
+
+    .logo {
+        width: 80px;
+    }
+    
+    .card-text {
+        line-height: 20px;
+        font-size: 14px;
+    }
+
+    .card2-container {
+        width: 160px;
+        margin-top: 20px;
+        margin-left: 10px;
+        padding: 20px 70px 10px 20px;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 959px) {
+
+    .testimonial {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        margin-top: -20px;
+        margin-bottom: 100px;
+    }
+
+    .reviewer {
+        margin-left: 20px;
+    }
+
+    .card1-container {
+        margin-top: 40px;
+        margin-left: 240px;
+
+    }
+
+    .card2-container {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+}
+
+@media screen and (min-width: 960px) and (max-width: 1279px) {
+    .reviewer{
+        margin-top: -50px;
+        margin-left: 20px;
+        max-width: 380px;
+    }  
+    .reviewer img {
+        margin-top: 80px;
+        margin-bottom: -20px;
+        
+    }
+    .reviewer h1 {
+        font-size: 30px;
+    
+    }
+    
+    .reviewer p {
+        line-height: 30px;
+        font-size: 18px;
+    }
+    
+    .reviewer ul {
+        font-size: 14px;
+    }
+    .reviewer, .card1-container, .card2-container {
+        aspect-ratio: 16/9;
+
+    }
+
+    .card1-container{
+        width: 220px;
+        /* margin: 100px 0px 20px 300px; */
+        margin-top: 50px;
+        margin-left: 200px;
+        padding: 20px 50px 10px 30px;
+        /* margin-bottom: 10%; */
+    }
+
+    .logo {
+        width: 80px;
+        /* margin-right: 10px; */
+    }
+    
+    .card-text {
+        /* margin-top: -10px; */
+        line-height: 20px;
+        /* text-align: left; */
+        font-size: 16px;
+        /* color: #757575; */
+    
+    
+    }
+    .card2-container{
+        width: 220px;
+        /* margin-top: -5%; */
+        margin-top: -20px;
+        margin-left: 30px;
+        padding: 20px 50px 10px 30px;
+    }
+
+}
