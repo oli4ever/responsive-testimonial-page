@@ -36,7 +36,7 @@
 }
 
 .checklist {
-    background-image: url(/images/Done_ring_round_fill.svg);
+    background-image: url(../images/Done_ring_round_fill.svg);
     background-repeat: no-repeat;
     background-position: -2px 5px;
     line-height: 2;
