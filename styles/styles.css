@@ -1,3 +1,7 @@
+body {
+    background-color: #f5f5dc;
+}
+
 .testimonial {
     display: grid;
     grid-template-columns: auto auto;
@@ -29,10 +33,18 @@
     margin-top: -10px;
 }
 
+.reviewer p:hover {
+    color: #b300b3;
+}
+
 .reviewer ul {
     margin-left: -40px;
     color: #757575dc;
     font-size: 18px;
+}
+
+.reviewer ul:hover {
+    color: #d2691e;
 }
 
 .checklist {
@@ -48,7 +60,6 @@
 .card1-container {
     width: 250px;
     margin: 100px 0px 20px 300px;
-    /* margin-right: 300px; */
     display: grid;
     align-items: center;
     padding: 20px 60px 10px 40px;
@@ -80,15 +91,21 @@
 .card2-container {
     width: 250px;
     margin: 20px 0px 30px 100px;
-    /* margin-top: 20px;
-    margin-bottom: 30px;
-    margin-left: -50px; */
     display: grid;
     align-items: center;
     padding: 20px 60px 10px 40px;
     border-radius: 10px;
     background: #fff;
     box-shadow: 0px 6px 50px 0px rgb(0, 0, 0, 0.09);
+}
+
+.card1-container:hover,
+.card2-container:hover {
+    background-color: #80ffe5;
+}
+
+.card-text:hover {
+    color: #ff0040;
 }
 
 /* Responsive Styles */
@@ -120,6 +137,7 @@
     .reviewer p {
         line-height: 30px;
         font-size: 18px;
+        max-width: 90%;
     }
     
     .reviewer ul {
@@ -129,9 +147,8 @@
     .card1-container {
         width: 160px;
         margin-top: 40px;
-        margin-left: 70px;
+        margin-left: 50px;
         padding: 20px 70px 10px 20px;
-
     }
 
     .logo {
@@ -149,6 +166,46 @@
         margin-left: 10px;
         padding: 20px 70px 10px 20px;
     }
+
+    @media screen and (min-width:360px) {
+        .card1-container {
+            margin-left: 80px;
+        }
+
+    }
+
+    @media screen and (min-width:390px) {
+        .card1-container {
+            margin-left: 110px;
+        }
+
+    }
+
+    @media screen and (min-width:412px) {
+        .card1-container {
+            margin-left: 150px;
+        }
+
+    }
+
+    @media screen and (min-width:480px) {
+        .reviewer{
+            margin-left: 60px;
+        } 
+        
+        .card1-container {
+            margin-left: 200px;
+        }
+
+    }
+
+    @media screen and (min-width:540px) {
+        .reviewer{
+            margin-left: 90px;
+        } 
+
+    }
+
 }
 
 @media screen and (min-width: 640px) and (max-width: 959px) {
@@ -173,6 +230,13 @@
     .card2-container {
         margin-top: 20px;
         margin-left: 20px;
+    }
+
+    @media screen and (min-width:712px) {
+        .reviewer{
+            margin-left: 90px;
+        } 
+
     }
 
 }
@@ -208,30 +272,22 @@
 
     .card1-container{
         width: 220px;
-        /* margin: 100px 0px 20px 300px; */
         margin-top: 50px;
         margin-left: 200px;
         padding: 20px 50px 10px 30px;
-        /* margin-bottom: 10%; */
     }
 
     .logo {
         width: 80px;
-        /* margin-right: 10px; */
     }
     
     .card-text {
-        /* margin-top: -10px; */
         line-height: 20px;
-        /* text-align: left; */
         font-size: 16px;
-        /* color: #757575; */
-    
-    
     }
+
     .card2-container{
         width: 220px;
-        /* margin-top: -5%; */
         margin-top: -20px;
         margin-left: 30px;
         padding: 20px 50px 10px 30px;
